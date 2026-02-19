@@ -1,9 +1,18 @@
-# All unpinned blobs below are extracted from xaga OS2.0.12.0.ULOCNXM
+# All unpinned blobs below are extracted from xaga/xagain OS2.0.3.0.ULOINXM
 
 product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GoogleCamera,Camera2,Aperture,Flash
 system_ext/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so
 system_ext/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so
 system_ext/lib64/libcamera_ispinterface_jni.xiaomi.so:system/lib64/libcamera_ispinterface_jni.xiaomi.so
+system_ext/lib64/libcameraimpl.so:system/lib64/libcameraimpl.so
+system_ext/lib64/libcameraopt.so:system/lib64/libcameraopt.so
+system_ext/lib64/libcameraopt_jni.so:system/lib64/libcameraopt_jni.so
+system_ext/lib64/libopencl-camera.so:system/lib64/libopencl-camera.so
+system_ext/lib64/libvirtualcamera_imageutils_jni.so:system/lib64/libvirtualcamera_imageutils_jni.so
+system_ext/lib64/libvirtualcamera_surfaceutils_jni.so:system/lib64/libvirtualcamera_surfaceutils_jni.so
 system_ext/lib64/libmtkisp_metadata_sys.so:system/lib64/libmtkisp_metadata_sys.so
+system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so:system/lib64/vendor.mediatek.hardware.camera.atms@1.0.so;MODULE_SUFFIX=_system
+system_ext/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so:system/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so:system/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so;MODULE_SUFFIX=_system
 system_ext/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so:system/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so
+system_ext/lib64/vendor.xiaomi.hardware.quickcamera-V1-ndk.so:system/lib64/vendor.xiaomi.hardware.quickcamera-V1-ndk.so

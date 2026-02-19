@@ -116,6 +116,108 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcameraimpl",
+    owner: "xiaomi/miuicamera-xaga",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcameraimpl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libsensor",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libcamera_metadata",
+                "libcamera_client",
+                "libsensorprivacy",
+                "libfmq",
+                "libopencl-camera",
+                "vendor.mediatek.hardware.camera.atms@1.0_system",
+                "vendor.mediatek.hardware.camera.atms-V1-ndk",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libpermission",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcameraopt",
+    owner: "xiaomi/miuicamera-xaga",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcameraopt.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libbase",
+                "libcutils",
+                "libbinder",
+                "libbinder_ndk",
+                "libhardware",
+                "vendor.xiaomi.hardware.quickcamera-V1-ndk",
+                "libz",
+                "libprocessgroup",
+                "libutilscallstack",
+                "libcamera_metadata",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcameraopt_jni",
+    owner: "xiaomi/miuicamera-xaga",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcameraopt_jni.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libbase",
+                "libprocessgroup",
+                "libnativehelper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmtkisp_metadata_sys",
     owner: "xiaomi/miuicamera-xaga",
     strip: {
@@ -130,6 +232,147 @@ cc_prebuilt_library_shared {
                 "libui",
                 "liblog",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libopencl-camera",
+    owner: "xiaomi/miuicamera-xaga",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libopencl-camera.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libvndksupport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvirtualcamera_imageutils_jni",
+    owner: "xiaomi/miuicamera-xaga",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libvirtualcamera_imageutils_jni.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libnativehelper",
+                "liblog",
+                "libjpeg",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvirtualcamera_surfaceutils_jni",
+    owner: "xiaomi/miuicamera-xaga",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libvirtualcamera_surfaceutils_jni.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libbinder_ndk",
+                "libandroid_runtime",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libgui",
+                "libui",
+                "libhardware",
+                "libnativewindow",
+                "libnativedisplay",
+                "liblog",
+                "libnativehelper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.camera.atms-V1-ndk",
+    owner: "xiaomi/miuicamera-xaga",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.camera.atms@1.0_system",
+    stem: "vendor.mediatek.hardware.camera.atms@1.0",
+    owner: "xiaomi/miuicamera-xaga",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.mediatek.hardware.camera.atms@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -186,6 +429,30 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.quickcamera-V1-ndk",
+    owner: "xiaomi/miuicamera-xaga",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.xiaomi.hardware.quickcamera-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
