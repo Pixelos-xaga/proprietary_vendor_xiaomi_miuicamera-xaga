@@ -1,9 +1,13 @@
-# All unpinned blobs below are extracted from xaga OS2.0.12.0.ULOCNXM
+# All unpinned blobs below are extracted from xaga/xagain OS2.0.3.0.ULOINXM
 
-product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GoogleCamera,Camera2,Aperture,Flash
-system_ext/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so
-system_ext/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so
-system_ext/lib64/libcamera_ispinterface_jni.xiaomi.so:system/lib64/libcamera_ispinterface_jni.xiaomi.so
-system_ext/lib64/libmtkisp_metadata_sys.so:system/lib64/libmtkisp_metadata_sys.so
-system_ext/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so:system/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so;MODULE_SUFFIX=_system
-system_ext/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so:system/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so
+product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GoogleCamera,Camera2,Aperture,Flash|bc715b98ef0cfb5ffb0b4b2de8ee2a01f5fe7753|1053e50083d4292639ba1deb7ff8924e92f1a034
+system_ext/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so|d3525ac4bdfe5e064486f9e45e354c65630f16d2|b4e32e1bb5356ca2534baad71002fc91f0c3485d
+system_ext/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so|ed25b24cfc071d934d70e316865b7665a4a720e3|29a0e2229f7b52c21c8e80d313dcf327a1bd2842
+system_ext/lib64/libcamera_ispinterface_jni.xiaomi.so:system/lib64/libcamera_ispinterface_jni.xiaomi.so|447831af7ed3ac394f9cee67508ca8fb1c0d6eec|6bc88a77e67061ac7361d1d67829df37bd48231b
+system_ext/lib64/libcameraimpl.so:system/lib64/libcameraimpl.so|7189e87862cfcc8a01c9728e17bba55aa447db62
+system_ext/lib64/libopencl-camera.so:system/lib64/libopencl-camera.so|3b81a755cef36d02827ce1ba62a1c09922e05943
+system_ext/lib64/libmtkisp_metadata_sys.so:system/lib64/libmtkisp_metadata_sys.so|c9df650e499f20ade0f104355e3851fbdc9f10b3
+system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so:system/lib64/vendor.mediatek.hardware.camera.atms@1.0.so;MODULE_SUFFIX=_system|808ce3b99bd54cb1d17db6540b49f65e0891e251
+system_ext/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so:system/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so|d82e26580264b20dd5b08ce88ffa9adff6ceefe4
+system_ext/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so:system/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so;MODULE_SUFFIX=_system|da803b52f35b309d690eaa0d687b067d59ec9a47
+system_ext/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so:system/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so|6bf0411d9f98caa18a3b4771e9dd80e740c8cc0b|974de524828cd22625ad6454890128add3522103

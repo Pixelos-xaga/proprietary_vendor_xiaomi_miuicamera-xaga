@@ -28,6 +28,7 @@ def lib_fixup_system_suffix(lib: str, partition: str, *args, **kwargs):
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
+    'vendor.mediatek.hardware.camera.atms@1.0': lib_fixup_system_suffix,
     'vendor.mediatek.hardware.camera.isphal@1.0': lib_fixup_system_suffix,
 }
 
@@ -42,7 +43,8 @@ blob_fixups: blob_fixups_user_type = {
     ('system/lib64/libcamera_mianode_jni.xiaomi.so', 'system/lib64/libcamera_ispinterface_jni.xiaomi.so'): blob_fixup()
         .add_needed('libgui_shim_miuicamera.so'),
     'system/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so': blob_fixup()
-        .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V6-ndk.so'),
+        .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V7-ndk.so')
+        .replace_needed('android.hardware.graphics.common-V6-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
